@@ -41,18 +41,15 @@ services:  # Define services
 volumes:  # Define volumes
   db_data:  # Data volume for persisting MySQL data
 
-```yaml
-
-version: Specifies the version of the Docker Compose file.
-services: Defines the various services of the application. Each service has its own configuration.
-db: Defines the MySQL service.
-image: Specifies the Docker image to use (e.g., mysql:5.7).
-volumes: Defines the volume for persisting data to the host.
-environment: Sets environment variables such as database password and name.
-wordpress: Defines the WordPress service.
-image: Specifies the Docker image to use (e.g., wordpress
-).
-ports: Maps host ports to container ports.
-environment: Sets environment variables such as database connection information.
-depends_on: Specifies the dependency of services, ensuring that the db service starts before the wordpress service.
-volumes: Defines volumes for persisting data.
+version: Specifies the version of the Docker Compose file.  
+services: Defines the various services of the application. Each service has its own configuration.  
+db: Defines the MySQL service.  
+image: Specifies the Docker image to use (e.g., mysql:5.7).  
+volumes: Defines the volume for persisting data to the host.  
+environment: Sets environment variables such as database password and name.  
+wordpress: Defines the WordPress service.  
+image: Specifies the Docker image to use (e.g., wordpress).  
+ports: Maps host ports to container ports.  
+environment: Sets environment variables such as database connection information.  
+depends_on: Specifies the dependency of services, ensuring that the db service starts before the wordpress service.  
+volumes: Defines volumes for persisting data.  
