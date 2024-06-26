@@ -54,3 +54,36 @@ ports: Maps host ports to container ports.
 environment: Sets environment variables such as database connection information.  
 depends_on: Specifies the dependency of services, ensuring that the db service starts before the wordpress service.  
 volumes: Defines volumes for persisting data.  
+
+## Using Docker Compose
+
+### Create the `docker-compose.yml` File
+Create a file named `docker-compose.yml` in your project directory and copy the content from the previous example into the file.
+
+### Start Services
+Run the following command in the project directory to start all defined services:
+```sh
+docker-compose up
+Run Services in the Background
+If you want to run services in the background, you can use the -d parameter:
+
+docker-compose up -d
+Stop Services
+To stop services and remove containers, use the following command:
+
+docker-compose down
+View Logs
+You can use the following command to view logs for all services:
+
+docker-compose logs
+With Docker Compose, you can easily define and manage complex multi-container applications, ensuring they run consistently in any environment.
+![Diagram 39](../images/Picture39.png)
+![Diagram 40](../images/Picture40.png)
+
+
+Add Compose File and Remove All Current Images
+![Diagram 41](../images/Picture41.png)
+
+Start Compose File
+The name format is application_name_network_name.
+![Diagram 42](../images/Picture42.png)
