@@ -21,7 +21,3 @@ Docker is a powerful tool for containerizing applications, making it easier to d
 - [Docker Cheat Sheet](https://dockerlabs.collabnix.com/docker/cheatsheet/)
 
 Feel free to explore the notes and enhance your understanding of Docker.
-
-## Contact
-
-If you have any questions or would like to connect, please feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/your-linkedin-profile) or via [email](mailto:your-email@example.com).
