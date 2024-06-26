@@ -31,56 +31,56 @@ Docker is an open-source platform for developing, delivering, and running applic
 
 ## Understanding Containers
 
-![Diagram 2](./images/picture2.png)
+![Diagram 2](./images/Picture2.png)
 
 ## Image Operations
 
-![Diagram 3](./images/picture3.png)
+![Diagram 3](./images/Picture3.png)
 
 ## Container Operations
 
-![Diagram 4](./images/picture4.png)
+![Diagram 4](./images/Picture4.png)
 
 ## Docker run Details:
 
 Running in the background + custom naming
 At this point, you will find that accessing nginx is not possible because it is only running within the current container and cannot be accessed from the external host. Port mapping is required, assuming you use `-p 88:80`, which maps the external port 88 directly to the internal port 80 of the container.
 
-![Diagram 5](./images/picture5.png)
-![Diagram 6](./images/picture6.png)
+![Diagram 5](./images/Picture5.png)
+![Diagram 6](./images/Picture6.png)
 
 Note: Container ports can be reused, but host ports cannot be reused.
 Each Docker container can be seen as an independent Linux system.
 
-![Diagram 7](./images/picture7.png)
+![Diagram 7](./images/Picture7.png)
 
 Reading the official Docker Hub documentation can provide more information about this official container, such as the location of the default web files.
 
-![Diagram 8](./images/picture8.png)
+![Diagram 8](./images/Picture8.png)
 
 Use `docker exec` to interact with a single container. After entering this container, use `ls` to check the current file directory, which is very similar to Linux. Here, the content of the default web file has been modified. You can use the `exit` command to exit the current container.
 
-![Diagram 9](./images/picture9.png)
+![Diagram 9](./images/Picture9.png)
 
 ## Saving Images
 
-![Diagram 10](./images/picture10.png)
+![Diagram 10](./images/Picture10.png)
 
 ## Sharing with the Community
 
 After logging in, you can share images, each with its unique name, usually in the format `username/image-name`. You need to use `docker tag` to rename it. No matter how you rename it, the image ID remains unchanged.
 
-![Diagram 11](./images/picture11.png)
-![Diagram 12](./images/picture12.png)
+![Diagram 11](./images/Picture11.png)
+![Diagram 12](./images/Picture12.png)
 
 Use `docker push` with the image tag to push.
 
-![Diagram 13](./images/picture13.png)
+![Diagram 13](./images/Picture13.png)
 
 You can set your latest image as `latest`, so when others download it without specifying a version number, it will not report an error and will default to downloading the latest version of the image.
 
-![Diagram 14](./images/picture14.png)
+![Diagram 14](./images/Picture14.png)
 
 ## Summary
 
-![Diagram 15](./images/picture15.png)
+![Diagram 15](./images/Picture15.png)
