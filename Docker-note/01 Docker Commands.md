@@ -1,4 +1,4 @@
-# 01 Docker Commands
+# Docker Commands
 
 ## Why Docker?
 
