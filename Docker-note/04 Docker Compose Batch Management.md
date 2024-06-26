@@ -64,18 +64,22 @@ Create a file named `docker-compose.yml` in your project directory and copy the 
 Run the following command in the project directory to start all defined services:
 ```sh
 docker-compose up
+```
 Run Services in the Background
 If you want to run services in the background, you can use the -d parameter:
-
+```sh
 docker-compose up -d
+```
 Stop Services
 To stop services and remove containers, use the following command:
-
+```sh
 docker-compose down
+```
 View Logs
 You can use the following command to view logs for all services:
-
+```sh
 docker-compose logs
+```
 With Docker Compose, you can easily define and manage complex multi-container applications, ensuring they run consistently in any environment.
 ![Diagram 39](../images/Picture39.png)
 ![Diagram 40](../images/Picture40.png)
