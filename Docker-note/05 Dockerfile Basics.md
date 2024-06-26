@@ -30,17 +30,13 @@ EXPOSE 3000
 CMD ["node", "app.js"]
 ```
 
-Dockerfile Instructions Explained
+Dockerfile Instructions Explained:
+
 FROM: Specifies the base image to build the image from. Example: FROM node:14 uses the official Node.js version 14 image as the base image.
-
 WORKDIR: Sets the working directory. All subsequent commands (like RUN, CMD, COPY) are run in this directory. Example: WORKDIR /app sets /app as the working directory.
-
 COPY: Copies files from the host to the image. Example: COPY . . copies all files from the current directory to the /app working directory in the image.
-
 RUN: Executes commands in the image during the build process. Example: RUN npm install runs the npm install command in the image to install dependencies.
-
 EXPOSE: Declares the port on which the container will listen at runtime. Example: EXPOSE 3000 indicates that the container listens on port 3000.
-
 CMD: Specifies the command to run when the container starts. Only the last CMD instruction in a Dockerfile takes effect. Example: CMD ["node", "app.js"] runs node app.js when the container starts.
 
 Creating and Using a Dockerfile
@@ -74,16 +70,23 @@ USER: Sets the user to run subsequent commands. Example: USER node
 With Dockerfile, you can define and automate the process of creating Docker images, ensuring your application can be built and run consistently in any Docker-supported environment.
 
 Upload a JAR Package Using rz Command (Our Software)
+
 ![Diagram 45](../images/Picture45.png)
 ![Diagram 46](../images/Picture46.png)
 
-Create Dockerfile and Enter Insert Mode by clicking key 'i'.
+Create Dockerfile and Enter Insert Mode by clicking key 'i'
+
 ![Diagram 47](../images/Picture47.png)
 
 Write Dockerfile in Insert Mode and Save with :wq
+
 ![Diagram 48](../images/Picture48.png)
+
 Check Dockerfile
+
 ![Diagram 49](../images/Picture49.png)
+
 Build Image and Copy JAR Package to Container
+
 ![Diagram 50](../images/Picture50.png)
 ![Diagram 51](../images/Picture51.png)
