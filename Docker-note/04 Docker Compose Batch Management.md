@@ -40,6 +40,9 @@ services:  # Define services
 
 volumes:  # Define volumes
   db_data:  # Data volume for persisting MySQL data
+
+```yaml
+
 version: Specifies the version of the Docker Compose file.
 services: Defines the various services of the application. Each service has its own configuration.
 db: Defines the MySQL service.
