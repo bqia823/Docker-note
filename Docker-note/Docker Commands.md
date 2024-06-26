@@ -27,7 +27,7 @@ Docker is an open-source platform for developing, delivering, and running applic
 
 ## How Docker Works
 
-![Diagram 1](./images/picture1.png)
+![Diagram 1](./images/Picture1.png)
 
 ## Understanding Containers
 
